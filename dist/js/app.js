@@ -1,5 +1,3 @@
-import { setTimeout } from "timers";
-
 // Nav toggles
 const nav = document.getElementById('nav');
 const hamburger = document.querySelector('.hamburger');
