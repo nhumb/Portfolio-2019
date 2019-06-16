@@ -1,0 +1,26 @@
+.link {
+    @include highlightedText;
+    &:before {
+        background-color: $blue;
+        left: 12px;
+        top: 50%;
+        height: 50%;
+        z-index: -1;
+        transition: 0.1s;
+    }
+    @include large {
+        &:hover {
+            &:before {
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+p .link {
+    &:before {
+        width: calc(100% - 8px);
+    }
+}

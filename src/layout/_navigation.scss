@@ -1,0 +1,90 @@
+nav {
+    @include borderBottom;
+    .row {
+        justify-content: center;
+    }
+}
+
+nav.mobile-nav {
+    .brand {
+        display: none;
+    }
+    .hamburger {
+        display: inline-block;
+        padding: 15px;
+        margin-left: -15px;
+        margin-bottom: -10px;
+        transition: 0.2s; 
+        span {
+            display: block;
+            height: 8px;
+            width: 38px;
+            margin-bottom: 6px;
+            background-color: $grey;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .hamburger.hamburger__rotated {
+        transform: rotate(90deg);
+    }
+    .nav-links {
+        text-align: center;
+        overflow: hidden;
+        height: 301px;
+        transition: 0.2s;   
+        li {
+            margin-top: 20px;
+            a{
+                font-size: 16px;
+            }
+            .link {
+                display: block;
+                padding: 10px;
+                &:before {
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    border-radius: 4px;
+                }
+            }
+            .btn {
+                display: block;
+            }
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .nav-links.nav-links__hidden {
+        height: 0;
+    }
+}
+
+nav.desktop-nav {
+    padding: 20px;
+    .col-12 {
+        display: flex;
+        align-content: center;
+    }
+    .brand {
+        align-self: center;
+    }
+    .nav-links {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        margin-left: auto;
+        li {
+            margin-right: 40px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+

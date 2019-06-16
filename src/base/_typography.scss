@@ -1,0 +1,75 @@
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700|Work+Sans:300,400,500,600&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+a {
+    color: initial;
+    font-weight: 300;
+}
+h1 {
+    font-size: 28px;
+    @include xSmall {
+        font-size: 30px;
+    }
+}
+h5 {
+    font-size: 18px;
+}
+.brand {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    color: $pink;
+    letter-spacing: 3px;
+    span {
+        color: $black;
+    }
+    
+}
+.nav-links a, 
+h2, 
+.btn {
+    font-size: 12px;
+    font-weight: 500;
+}
+p {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+p b {
+    font-weight: 400;
+}
+code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $pink;
+    display: inline-flex;
+    background-color: $grey;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 4px;
+    padding: 0 6px;
+    margin: 0 8px 6px 0;
+}
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+	margin-bottom: 30px;
+}

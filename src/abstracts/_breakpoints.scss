@@ -1,0 +1,37 @@
+$xSmallScreen: "(min-width: 360px)";
+$smallScreen: "(min-width: 480px)";
+$mediumScreen: "(min-width: 640px)";
+$largeScreen: "(min-width: 768px)";
+$xLargeScreen: "(min-width: 992px)";
+
+@mixin xSmall {
+  @media #{$xSmallScreen} {
+    @content;
+  }
+}
+
+@mixin small {
+  @media #{$smallScreen} {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media #{$mediumScreen} {
+    @content;
+  }
+}
+
+@mixin large {
+  @media #{$largeScreen} {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media #{$xLargeScreen} {
+    @content;
+  }
+}
+
+

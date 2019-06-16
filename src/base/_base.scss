@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+.clearfix { 
+	&:after {
+		content: " ";
+	   display: block; 
+	   height: 0;
+	   clear: both;
+	}
+}
+
+body {
+	line-height: 1.6;
+	margin: auto;
+	background-color: $grey;
+	@include medium {
+		padding: 20px;
+	}	
+}
+
+
+section {
+	@include padding-40-60;
+	@include borderBottom;
+}
+
+
+
+

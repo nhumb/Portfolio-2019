@@ -1,0 +1,17 @@
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @include padding-60-80;
+    @include borderBottom;
+    .row {
+        justify-content: center;
+    }
+    img {
+        max-height: 70px;
+        margin-bottom: 15px;
+    }
+    .brand {
+        margin-bottom: 10px;
+    }
+}
